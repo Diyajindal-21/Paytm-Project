@@ -36,7 +36,7 @@ router.post("/transfer",authmiddleware,async(req,res)=>{
     //commit the transaction or save the transaction
     await session.commitTransaction();
     res.json({
-        msg:"Transfer successfull"
+        msg:"Transfer done!"
     })
 })
 module.exports=router;
